@@ -53,9 +53,6 @@ jobs:
                   script: |
                       cd /home/${{ secrets.EC2_USER }}/backend
 
-                      sudo apt update -y
-                      sudo apt install -y python3-venv
-
                       python3 -m venv .venv || true
                       source .venv/bin/activate
 
